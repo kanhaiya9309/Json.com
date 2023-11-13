@@ -1,0 +1,101 @@
+[
+  {
+    "id": "0001",
+    "type": "Student",
+    "name": "kanhaiya gawali",
+    "education": {
+      "college": {
+        "name": "S.M.Joshi",
+        "preparation": "BSc.Computer"
+      },
+      "Skill": {
+        "name": "Web Development",
+        "expertice": "Medium"
+      },
+      "Language": [
+        {
+          "name": "Javascript",
+          "projects": ["To-do List", "Quiz App"]
+        },
+        {
+          "name": "Node.js",
+          "projects": ["Student From", "Qr-code App", "Server-Side-Handing"]
+        },
+        {
+          "name": "API",
+          "projects": ["Movie-API", "News-API", "Movie-API"]
+        },
+        {
+          "name": "EJs",
+          "projects": ["Band Name Generator", "EjS Protofilo"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "0002",
+    "type": "Student",
+    "name": "Kunal gawali",
+    "education": {
+      "college": {
+        "name": "M.S.G.college",
+        "preparation": "BSc.chemistry"
+      },
+      "Skill": {
+        "name": "chemical",
+        "expertice": "Medium"
+      },
+      "Language": [
+        {
+          "name": "Physics",
+          "projects": ["Project about Spece", "Observation"]
+        },
+        {
+          "name": "Chemical",
+          "projects": ["Farmer use Fertilizer", "Improve soli health"]
+        },
+        {
+          "name": "Math",
+          "projects": ["Your sell Prediction", "Bussiness owener"]
+        },
+        {
+          "name": "Biology",
+          "projects": ["Human Life Cycle Presentation", "Human Body"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "0003",
+    "type": "Student",
+    "name": "Tushare gawali",
+    "education": {
+      "college": {
+        "name": "M.S.G.college",
+        "preparation": "BA.Economy"
+      },
+      "Skill": {
+        "name": "Public Speech",
+        "expertice": "Medium"
+      },
+      "Language": [
+        {
+          "name": "English",
+          "projects": ["Grammer", "Compitition"]
+        },
+        {
+          "name": "Economy",
+          "projects": ["Share-Market Forcast", "Detail Report"]
+        },
+        {
+          "name": "Scology",
+          "projects": ["Behavioural Study", "human Being"]
+        },
+        {
+          "name": "History",
+          "projects": ["Indian History", "Indian Rich"]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search</title>
+</head>
+<body>
+    <h1>Student Search</h1>
+    <input type="text" id="searchInput" placeholder="Enter student name">
+    <button id="searchButton">Search</button>
+    <div id="searchResults"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+
+            searchButton.addEventListener('click', () => {
+                const query = searchInput.value.trim().toLowerCase();
+
+                // Perform a search based on the user's query
+                const results = searchData.filter(student => student.name.toLowerCase().includes(query));
+
+                // Display the search results
+                displayResults(results);
+            });
+            
+
+            function displayResults(results) {
+                searchResults.innerHTML = ''; // Clear previous results
+
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<p>No results found</p>';
+                } else {
+                    results.forEach(student => {
+                        const studentDiv = document.createElement('div');
+                        studentDiv.classList.add('student');
+
+                        studentDiv.innerHTML = `
+                            <h2>${student.name}</h2>
+                            <div class="details">
+                                <h3>College</h3>
+                                <ul>
+                                    <li>Name: ${student.education.college.name}</li>
+                                    <li>Preparation: ${student.education.college.preparation}</li>
+                                </ul>
+                                <h3>Skill</h3>
+                                <ul>
+                                    <li>Name: ${student.education.Skill.name}</li>
+                                    <li>Expertise: ${student.education.Skill.expertice}</li>
+                                </ul>
+                            </div>
+                        `;
+
+                        searchResults.appendChild(studentDiv);
+                    });
+                }
+            }
+        });
+
+        // Your JSON data (replace with your actual data)
+        const searchData = [
+            {
+                "id": "0001",
+                "type": "Student",
+                "name": " Kanhaiya gawali",
+                "education": {
+                    "college": {
+                        "name": "S.M.Joshi",
+                        "preparation": "BSc.Computer"
+                    },
+                    "Skill": {
+                        "name": "Web Development",
+                        "expertice": "Medium"
+                    }
+                }
+            },
+            {
+                "id": "0002",
+                "type": "Student",
+                "name": "Kunal gawali",
+                "education": {
+                    "college": {
+                        "name": "M.S.G.college",
+                        "preparation": "BSc.chemistry"
+                    },
+                    "Skill": {
+                        "name": "chemical",
+                        "expertice": "Medium"
+                    }
+                }
+            },
+            {
+                "id": "0003",
+                "type": "Student",
+                "name": "Tushar gawali",
+                "education": {
+                    "college": {
+                        "name": "M.S.G.college",
+                        "preparation": "BA.Economy"
+                    },
+                    "Skill": {
+                        "name": "Public Speech",
+                        "expertice": "Medium"
+                    }
+                }
+            }
+        ];
+    </script>
+</body>
+</html>
