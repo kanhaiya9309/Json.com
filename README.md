@@ -24,7 +24,7 @@ A student database project that stores information about different students in J
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/kanhaiya9309/json-student-database.git
+    git clone https://github.com/kanhaiya9309/Json.com.git
     ```
 
 2. Navigate to the project directory:
@@ -38,6 +38,7 @@ A student database project that stores information about different students in J
     ```bash
     npm install
     npm start
+    node index.js
     ```
 
 4. Access the project at `http://localhost:3000` in your web browser.
